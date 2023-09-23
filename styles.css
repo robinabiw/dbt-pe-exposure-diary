@@ -1,10 +1,47 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+
+    input[type="text"], select {
+        font-size: 14px;
+    }
+
+    input[type="range"] {
+        width: 100%;
+    }
 }
