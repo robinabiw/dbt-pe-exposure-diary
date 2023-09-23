@@ -24,11 +24,114 @@
 
         <label for="exposure-type">Exposure Type:</label>
         <select id="exposure-type" name="exposure-type">
-            <option value="imaginable">Imaginable</option>
+            <option value="imaginable">Imagined</option>
             <option value="in-vivo">In Vivo</option>
         </select>
 
         <!-- You'd continue here with the table structures and input elements -->
+
+<!-- Probability and Cost Estimates Table -->
+<h2>Probability and Cost Estimates:</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>What is the worst that could happen?</th>
+            <th colspan="2">How likely is it that this will happen?</th>
+            <th colspan="2">How bad would it be if this happened?</th>
+            <th>Did this happen? Y/N</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Before</th>
+            <th>After</th>
+            <th>Before</th>
+            <th>After</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Repeat the following rows for each entry (1, 2, 3) -->
+        <tr>
+            <td>1</td>
+            <td><input type="text"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <!-- ... -->
+    </tbody>
+</table>
+
+<!-- SUDS, Urges, and Dissociation Table -->
+<h2>SUDS, Urges, and Dissociation:</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>SUDS</th>
+            <th>Urge to kill myself</th>
+            <th>Urge to self-harm</th>
+            <th>Urge to quit therapy</th>
+            <th>Urge to use substances</th>
+            <th>Dissociation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Repeat the following rows for each entry (Before, Peak, After) -->
+        <tr>
+            <td>Before</td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="5"></td>
+            <td><input type="range" min="0" max="5"></td>
+            <td><input type="range" min="0" max="5"></td>
+            <td><input type="range" min="0" max="5"></td>
+            <td><input type="range" min="0" max="100"></td>
+        </tr>
+        <!-- ... -->
+    </tbody>
+</table>
+
+<!-- Specific Emotions and Radical Acceptance Table -->
+<h2>Specific Emotions and Radical Acceptance:</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Fear</th>
+            <th>Guilt</th>
+            <th>Shame</th>
+            <th>Disgust</th>
+            <th>Anger</th>
+            <th>Sadness</th>
+            <th>Joy</th>
+            <th>Radical Acceptance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Repeat the following rows for each entry (Before, After) -->
+        <tr>
+            <td>Before</td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+            <td><input type="range" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>After</td>
+            <!-- Repeat the slider inputs for each emotion and radical acceptance -->
+        </tr>
+    </tbody>
+</table>
+
+
     </form>
 
     <script src="scripts.js"></script>
