@@ -14,7 +14,7 @@ function saveData() {
         const valueToStore = element.type === 'checkbox' ? element.checked : element.value;
         localStorage.setItem(element.id, valueToStore);
     });
-    alert("Data saved successfully!");
+    alert("Data saved successfully! NOTE: Data is saved locally on your computer's browser. This keeps your data private and secure, without the need to login.");
 }
 
 
