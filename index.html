@@ -12,6 +12,8 @@
 <div id="content">
     <h1>DBT-PE Exposure Diary</h1>
 
+<div class="form-section">
+
     <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
@@ -30,11 +32,10 @@
             <option value="imaginable">Imagined</option>
             <option value="in-vivo">In Vivo</option>
         </select>
-
+</div>
         <!-- You'd continue here with the table structures and input elements -->
 
-<div id="content" style="max-width: 600px; margin: 0 auto;">
-
+<div class="table-section">
 <!-- Probability and Cost Estimates Table -->
 <h2>Probability and Cost Estimates:</h2>
 <table border="1">
@@ -60,7 +61,7 @@
         <!-- Row 1 -->
         <tr>
             <td>1</td>
-            <td><textarea rows="3" style="width:100%;"></textarea></td>
+            <td><input type="text"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
@@ -70,7 +71,7 @@
         <!-- Row 2 -->
         <tr>
             <td>2</td>
-            <td><textarea rows="3" style="width:100%;"></textarea></td>
+            <td><input type="text"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
@@ -80,7 +81,7 @@
         <!-- Row 3 -->
         <tr>
             <td>3</td>
-            <td><textarea rows="3" style="width:100%;"></textarea></td>
+            <td><input type="text"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
             <td><input type="range" min="0" max="100"></td>
@@ -89,7 +90,9 @@
         </tr>
     </tbody>
 </table>
+</div>
 
+<div class="table-section">
 <!-- SUDS, Urges, and Dissociation Table -->
 <h2>SUDS, Urges, and Dissociation:</h2>
 <table border="1">
@@ -137,10 +140,12 @@
         </tr>
     </tbody>
 </table>
+</div>
 
+<div class="table-section">
 <!-- Specific Emotions and Radical Acceptance Table -->
 <h2>Specific Emotions and Radical Acceptance:</h2>
-<table border="1">
+<table border="1" class="emotions-table">
     <thead>
         <tr>
             <th></th>
@@ -181,13 +186,11 @@
         </tr>
     </tbody>
 </table>
+</div>
+
 
     </form>
-
 </div>
-</div>
-     </tr>
-     </tr>
 
 <button onclick="generatePDF()">Save as PDF</button>
 

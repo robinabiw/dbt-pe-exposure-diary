@@ -1,29 +1,29 @@
-body {
+html, body, div, h1, h2, form, label, input, table, th, td {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+body {
+    margin: 20px 40px;  /* 20px top and bottom, 40px left and right */
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;  /* Space between the form and the table */
 }
 
 table {
     width: 100%;
-    font-size: 10px; /* Reduce font size */
     border-collapse: collapse;
+    margin-top: 20px;  /* Space between tables if there are multiple */
 }
 
-td, th {
-    border: 1px solid #000;
-    padding: 2px;  /* Reduce padding */
-    text-align: left;
+table, th, td {
+    border: 1px solid #ddd;
 }
-
 
 th, td {
     text-align: left;
@@ -33,7 +33,7 @@ th, td {
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     body {
-        margin: 10px;
+        margin: 10px 20px;  /* 10px top and bottom, 20px left and right */
         font-size: 14px;
     }
 
@@ -46,6 +46,113 @@ th, td {
     }
 
     input[type="range"] {
-        width: 100%;
+        width: 70%; /* shortened for fitting content in PDF */
     }
 }
+
+/* ... (previous CSS code) ... */
+
+.form-section, .table-section {
+    width: 100%;
+    max-width: 800px; /* Limit the width for larger screens */
+    margin-bottom: 20px;  /* Provides spacing between sections */
+}
+
+/* For making tables dynamically resize */
+table {
+    width: 100%;
+    table-layout: fixed;  /* This ensures columns have a consistent width */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    /* ... (previous mobile adjustments) ... */
+    
+    .form-section, .table-section {
+        width: 100%;
+        padding: 0 10px;  /* Add some padding on the sides so content isn't flush with the screen edge */
+    }
+}
+
+
+/* ... (previous CSS code) ... */
+
+/* Adjust font size for tables */
+table {
+    font-size: 16px; /* Default font size, adjust as necessary */
+}
+
+/* Set default slider width */
+input[type="range"] {
+    width: 90%; /* Set to a smaller value if needed, or adjust based on preference */
+}
+
+@media (max-width: 600px) {
+    /* ... (previous mobile adjustments) ... */
+
+    /* Adjust font size for tables on smaller screens */
+    table {
+        font-size: 14px; /* Reduced font size for mobile, adjust as necessary */
+    }
+
+    /* Adjust sliders for mobile */
+    input[type="range"] {
+        transform: scale(0.9); /* Scale down slider. Adjust scale factor as needed. */
+        width: 100%; /* You might need to adjust this depending on the slider's appearance */
+    }
+}
+
+
+/* ... (existing CSS code) ... */
+
+/* Style for the text input fields in the table */
+table input[type="text"] {
+    width: 90%; /* It'll occupy 90% width of the table cell. You can adjust based on your requirement. */
+    padding: 4px 8px; /* Some padding for better appearance */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+    border: 1px solid #ccc; /* Sample border, adjust as required */
+}
+
+@media (max-width: 600px) {
+    /* ... (existing mobile adjustments) ... */
+
+    /* Adjust text input for mobile */
+    table input[type="text"] {
+        width: 85%; /* Reduce width slightly to prevent overflow */
+        padding: 2px 6px; /* Reduced padding for mobile */
+    }
+}
+
+/* ... (previous CSS code) ... */
+
+/* Style for the numeric input fields in the table */
+.numeric-input {
+    width: 60px; /* Fixed width for the numeric inputs */
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Optimizing width allocation for the table */
+table {
+    table-layout: fixed; /* This will allow you to set specific widths to columns */
+    width: 100%;
+}
+
+/* Allocating more space for the "What is the worst that could happen?" column */
+table th.worst-case, table td.worst-case {
+    width: 40%; /* Assigning a larger percentage. Adjust this based on your needs */
+}
+
+@media (max-width: 600px) {
+    /* ... (existing mobile adjustments) ... */
+
+    .numeric-input {
+        width: 50px; /* Slightly reduced width for mobile views */
+    }
+
+    table th.worst-case, table td.worst-case {
+        width: 50%; /* You can adjust this value to optimize the space on mobile */
+    }
+}
+
