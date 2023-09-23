@@ -2,6 +2,13 @@
 
 
 
+
+
+function updateValue(slider, textBoxId) {
+    document.getElementById(textBoxId).value = slider.value;
+}
+
+
 function saveData() {
     document.querySelectorAll('#content input, #content textarea').forEach(element => {
         const valueToStore = element.type === 'checkbox' ? element.checked : element.value;

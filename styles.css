@@ -30,6 +30,12 @@ th, td {
     padding: 8px;
 }
 
+@media print {
+    input[type="range"] {
+        display: none;
+    }
+}
+
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     body {
