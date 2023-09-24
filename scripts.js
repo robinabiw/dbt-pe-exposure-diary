@@ -1,6 +1,17 @@
 // You can add interactive logic here, like validating the form inputs, etc.
 
 
+function updateSlider(textBox, sliderId) {
+    const slider = document.getElementById(sliderId);
+    slider.value = textBox.value;
+}
+
+
+function updateValue(slider, textBoxId) {
+    const textBox = document.getElementById(textBoxId);
+    textBox.value = slider.value;
+}
+
 
 
 

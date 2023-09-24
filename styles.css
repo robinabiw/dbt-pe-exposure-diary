@@ -88,3 +88,10 @@ table input[type="text"] {
         width: 100%;
     }
 }
+
+
+input[type="number"] {
+    width: 50px;
+    margin-left: 10px;
+}
+

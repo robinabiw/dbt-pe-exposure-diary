@@ -63,10 +63,22 @@
             <td colspan="2">
                 <textarea id="worst-case-1" style="width: 100%; height: 60px; resize: vertical; white-space: pre-wrap; word-wrap: break-word;"></textarea>
             </td>
-            <td><input type="range" id="likelihood-before-1" min="0" max="100" value="0"></td>
-            <td><input type="range" id="likelihood-after-1" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-before-1" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-after-1" min="0" max="100" value="0"></td>
+            <td>
+                <input type="range" id="likelihood-before-1" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-before-1-value')">
+                <input type="number" id="likelihood-before-1-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-before-1')">
+            </td>
+            <td>
+                <input type="range" id="likelihood-after-1" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-after-1-value')">
+                <input type="number" id="likelihood-after-1-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-after-1')">
+            </td>
+            <td>
+                <input type="range" id="badness-before-1" min="0" max="100" value="0" oninput="updateValue(this, 'badness-before-1-value')">
+                <input type="number" id="badness-before-1-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-before-1')">
+            </td>
+            <td>
+                <input type="range" id="badness-after-1" min="0" max="100" value="0" oninput="updateValue(this, 'badness-after-1-value')">
+                <input type="number" id="badness-after-1-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-after-1')">
+            </td>
             <td><input type="checkbox" id="happened-1"></td>
         </tr>
         <!-- Row 2 -->
@@ -74,10 +86,22 @@
             <td colspan="2">
                 <textarea id="worst-case-2" style="width: 100%; height: 60px; resize: vertical; white-space: pre-wrap; word-wrap: break-word;"></textarea>
             </td>
-            <td><input type="range" id="likelihood-before-2" min="0" max="100" value="0"></td>
-            <td><input type="range" id="likelihood-after-2" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-before-2" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-after-2" min="0" max="100" value="0"></td>
+            <td>
+                <input type="range" id="likelihood-before-2" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-before-2-value')">
+                <input type="number" id="likelihood-before-2-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-before-2')">
+            </td>
+            <td>
+                <input type="range" id="likelihood-after-2" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-after-2-value')">
+                <input type="number" id="likelihood-after-2-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-after-2')">
+            </td>
+            <td>
+                <input type="range" id="badness-before-2" min="0" max="100" value="0" oninput="updateValue(this, 'badness-before-2-value')">
+                <input type="number" id="badness-before-2-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-before-2')">
+            </td>
+            <td>
+                <input type="range" id="badness-after-2" min="0" max="100" value="0" oninput="updateValue(this, 'badness-after-2-value')">
+                <input type="number" id="badness-after-2-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-after-2')">
+            </td>
             <td><input type="checkbox" id="happened-2"></td>
         </tr>
         <!-- Row 3 -->
@@ -85,10 +109,22 @@
             <td colspan="2">
                 <textarea id="worst-case-3" style="width: 100%; height: 60px; resize: vertical; white-space: pre-wrap; word-wrap: break-word;"></textarea>
             </td>
-            <td><input type="range" id="likelihood-before-3" min="0" max="100" value="0"></td>
-            <td><input type="range" id="likelihood-after-3" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-before-3" min="0" max="100" value="0"></td>
-            <td><input type="range" id="badness-after-3" min="0" max="100" value="0"></td>
+            <td>
+                <input type="range" id="likelihood-before-3" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-before-3-value')">
+                <input type="number" id="likelihood-before-3-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-before-3')">
+            </td>
+            <td>
+                <input type="range" id="likelihood-after-3" min="0" max="100" value="0" oninput="updateValue(this, 'likelihood-after-3-value')">
+                <input type="number" id="likelihood-after-3-value" min="0" max="100" value="0" onchange="updateSlider(this, 'likelihood-after-3')">
+            </td>
+            <td>
+                <input type="range" id="badness-before-3" min="0" max="100" value="0" oninput="updateValue(this, 'badness-before-3-value')">
+                <input type="number" id="badness-before-3-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-before-3')">
+            </td>
+            <td>
+                <input type="range" id="badness-after-3" min="0" max="100" value="0" oninput="updateValue(this, 'badness-after-3-value')">
+                <input type="number" id="badness-after-3-value" min="0" max="100" value="0" onchange="updateSlider(this, 'badness-after-3')">
+            </td>
             <td><input type="checkbox" id="happened-3"></td>
         </tr>
     </tbody>
@@ -99,11 +135,7 @@
 
 
 
-
-
-
 <div class="table-section">
-    <!-- TRANSPOSED SUDS, Urges, and Dissociation Table -->
    <!-- SUDS, Urges, and Dissociation Table -->
 <h2>SUDS, Urges, and Dissociation:</h2>
 <table border="1">
@@ -119,45 +151,104 @@
         <!-- SUDS -->
         <tr>
             <td>SUDS</td>
-            <td><input type="range" min="0" max="100" value="0" id="suds_before"></td>
-            <td><input type="range" min="0" max="100" value="0" id="suds_peak"></td>
-            <td><input type="range" min="0" max="100" value="0" id="suds_after"></td>
+            <td>
+                <input type="range" min="0" max="100" value="0" id="suds_before" oninput="updateValue(this, 'suds_before_value')">
+                <input type="number" min="0" max="100" value="0" id="suds_before_value" onchange="updateSlider(this, 'suds_before')">
+            </td>
+            <td>
+                <input type="range" min="0" max="100" value="0" id="suds_peak" oninput="updateValue(this, 'suds_peak_value')">
+                <input type="number" min="0" max="100" value="0" id="suds_peak_value" onchange="updateSlider(this, 'suds_peak')">
+            </td>
+            <td>
+                <input type="range" min="0" max="100" value="0" id="suds_after" oninput="updateValue(this, 'suds_after_value')">
+                <input type="number" min="0" max="100" value="0" id="suds_after_value" onchange="updateSlider(this, 'suds_after')">
+            </td>
         </tr>
+        
         <!-- Urge to kill myself -->
         <tr>
             <td>Urge to kill myself</td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_kill_before"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_kill_peak"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_kill_after"></td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_kill_before" oninput="updateValue(this, 'urge_kill_before_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_kill_before_value" onchange="updateSlider(this, 'urge_kill_before')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_kill_peak" oninput="updateValue(this, 'urge_kill_peak_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_kill_peak_value" onchange="updateSlider(this, 'urge_kill_peak')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_kill_after" oninput="updateValue(this, 'urge_kill_after_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_kill_after_value" onchange="updateSlider(this, 'urge_kill_after')">
+            </td>
         </tr>
+
         <!-- Urge to self-harm -->
         <tr>
             <td>Urge to self-harm</td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_harm_before"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_harm_peak"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_harm_after"></td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_harm_before" oninput="updateValue(this, 'urge_harm_before_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_harm_before_value" onchange="updateSlider(this, 'urge_harm_before')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_harm_peak" oninput="updateValue(this, 'urge_harm_peak_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_harm_peak_value" onchange="updateSlider(this, 'urge_harm_peak')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_harm_after" oninput="updateValue(this, 'urge_harm_after_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_harm_after_value" onchange="updateSlider(this, 'urge_harm_after')">
+            </td>
         </tr>
+
         <!-- Urge to quit therapy -->
         <tr>
             <td>Urge to quit therapy</td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_quit_before"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_quit_peak"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_quit_after"></td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_quit_before" oninput="updateValue(this, 'urge_quit_before_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_quit_before_value" onchange="updateSlider(this, 'urge_quit_before')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_quit_peak" oninput="updateValue(this, 'urge_quit_peak_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_quit_peak_value" onchange="updateSlider(this, 'urge_quit_peak')">
+            </td>
+            <td>
+                <input type="range" min="0" max="5" value="0" id="urge_quit_after" oninput="updateValue(this, 'urge_quit_after_value')">
+                <input type="number" min="0" max="5" value="0" id="urge_quit_after_value" onchange="updateSlider(this, 'urge_quit_after')">
+            </td>
         </tr>
-        <!-- Urge to use substances -->
-        <tr>
-            <td>Urge to use substances</td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_substances_before"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_substances_peak"></td>
-            <td><input type="range" min="0" max="5" value="0" id="urge_substances_after"></td>
-        </tr>
-        <!-- Dissociation -->
-        <tr>
-            <td>Dissociation</td>
-            <td><input type="range" min="0" max="100" value="0" id="dissociation_before"></td>
-            <td><input type="range" min="0" max="100" value="0" id="dissociation_peak"></td>
-            <td><input type="range" min="0" max="100" value="0" id="dissociation_after"></td>
-        </tr>
+
+  <!-- Urge to use substances -->
+<tr>
+    <td>Urge to use substances</td>
+    <td>
+        <input type="range" min="0" max="5" value="0" id="urge_substances_before" oninput="updateValue(this, 'urge_substances_before_value')">
+        <input type="number" min="0" max="5" value="0" id="urge_substances_before_value" onchange="updateSlider(this, 'urge_substances_before')">
+    </td>
+    <td>
+        <input type="range" min="0" max="5" value="0" id="urge_substances_peak" oninput="updateValue(this, 'urge_substances_peak_value')">
+        <input type="number" min="0" max="5" value="0" id="urge_substances_peak_value" onchange="updateSlider(this, 'urge_substances_peak')">
+    </td>
+    <td>
+        <input type="range" min="0" max="5" value="0" id="urge_substances_after" oninput="updateValue(this, 'urge_substances_after_value')">
+        <input type="number" min="0" max="5" value="0" id="urge_substances_after_value" onchange="updateSlider(this, 'urge_substances_after')">
+    </td>
+</tr>
+
+<!-- Dissociation -->
+<tr>
+    <td>Dissociation</td>
+    <td>
+        <input type="range" min="0" max="100" value="0" id="dissociation_before" oninput="updateValue(this, 'dissociation_before_value')">
+        <input type="number" min="0" max="100" value="0" id="dissociation_before_value" onchange="updateSlider(this, 'dissociation_before')">
+    </td>
+    <td>
+        <input type="range" min="0" max="100" value="0" id="dissociation_peak" oninput="updateValue(this, 'dissociation_peak_value')">
+        <input type="number" min="0" max="100" value="0" id="dissociation_peak_value" onchange="updateSlider(this, 'dissociation_peak')">
+    </td>
+    <td>
+        <input type="range" min="0" max="100" value="0" id="dissociation_after" oninput="updateValue(this, 'dissociation_after_value')">
+        <input type="number" min="0" max="100" value="0" id="dissociation_after_value" onchange="updateSlider(this, 'dissociation_after')">
+    </td>
+</tr>
     </tbody>
 </table>
 </div>
@@ -182,58 +273,130 @@
             <!-- Fear -->
             <tr>
                 <td>Fear</td>
-                <td><input type="range" min="0" max="100" id="fear-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="fear-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="fear-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="fear-before" value="0" oninput="updateValue(this, 'fear-before-value')">
+                    <input type="number" min="0" max="100" id="fear-before-value" value="0" onchange="updateSlider(this, 'fear-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="fear-peak" value="0" oninput="updateValue(this, 'fear-peak-value')">
+                    <input type="number" min="0" max="100" id="fear-peak-value" value="0" onchange="updateSlider(this, 'fear-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="fear-after" value="0" oninput="updateValue(this, 'fear-after-value')">
+                    <input type="number" min="0" max="100" id="fear-after-value" value="0" onchange="updateSlider(this, 'fear-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Guilt -->
             <tr>
                 <td>Guilt</td>
-                <td><input type="range" min="0" max="100" id="guilt-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="guilt-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="guilt-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="guilt-before" value="0" oninput="updateValue(this, 'guilt-before-value')">
+                    <input type="number" min="0" max="100" id="guilt-before-value" value="0" onchange="updateSlider(this, 'guilt-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="guilt-peak" value="0" oninput="updateValue(this, 'guilt-peak-value')">
+                    <input type="number" min="0" max="100" id="guilt-peak-value" value="0" onchange="updateSlider(this, 'guilt-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="guilt-after" value="0" oninput="updateValue(this, 'guilt-after-value')">
+                    <input type="number" min="0" max="100" id="guilt-after-value" value="0" onchange="updateSlider(this, 'guilt-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Shame -->
             <tr>
                 <td>Shame</td>
-                <td><input type="range" min="0" max="100" id="shame-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="shame-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="shame-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="shame-before" value="0" oninput="updateValue(this, 'shame-before-value')">
+                    <input type="number" min="0" max="100" id="shame-before-value" value="0" onchange="updateSlider(this, 'shame-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="shame-peak" value="0" oninput="updateValue(this, 'shame-peak-value')">
+                    <input type="number" min="0" max="100" id="shame-peak-value" value="0" onchange="updateSlider(this, 'shame-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="shame-after" value="0" oninput="updateValue(this, 'shame-after-value')">
+                    <input type="number" min="0" max="100" id="shame-after-value" value="0" onchange="updateSlider(this, 'shame-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Disgust -->
             <tr>
                 <td>Disgust</td>
-                <td><input type="range" min="0" max="100" id="disgust-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="disgust-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="disgust-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="disgust-before" value="0" oninput="updateValue(this, 'disgust-before-value')">
+                    <input type="number" min="0" max="100" id="disgust-before-value" value="0" onchange="updateSlider(this, 'disgust-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="disgust-peak" value="0" oninput="updateValue(this, 'disgust-peak-value')">
+                    <input type="number" min="0" max="100" id="disgust-peak-value" value="0" onchange="updateSlider(this, 'disgust-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="disgust-after" value="0" oninput="updateValue(this, 'disgust-after-value')">
+                    <input type="number" min="0" max="100" id="disgust-after-value" value="0" onchange="updateSlider(this, 'disgust-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Anger -->
             <tr>
                 <td>Anger</td>
-                <td><input type="range" min="0" max="100" id="anger-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="anger-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="anger-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="anger-before" value="0" oninput="updateValue(this, 'anger-before-value')">
+                    <input type="number" min="0" max="100" id="anger-before-value" value="0" onchange="updateSlider(this, 'anger-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="anger-peak" value="0" oninput="updateValue(this, 'anger-peak-value')">
+                    <input type="number" min="0" max="100" id="anger-peak-value" value="0" onchange="updateSlider(this, 'anger-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="anger-after" value="0" oninput="updateValue(this, 'anger-after-value')">
+                    <input type="number" min="0" max="100" id="anger-after-value" value="0" onchange="updateSlider(this, 'anger-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Sadness -->
             <tr>
                 <td>Sadness</td>
-                <td><input type="range" min="0" max="100" id="sadness-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="sadness-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="sadness-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="sadness-before" value="0" oninput="updateValue(this, 'sadness-before-value')">
+                    <input type="number" min="0" max="100" id="sadness-before-value" value="0" onchange="updateSlider(this, 'sadness-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="sadness-peak" value="0" oninput="updateValue(this, 'sadness-peak-value')">
+                    <input type="number" min="0" max="100" id="sadness-peak-value" value="0" onchange="updateSlider(this, 'sadness-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="sadness-after" value="0" oninput="updateValue(this, 'sadness-after-value')">
+                    <input type="number" min="0" max="100" id="sadness-after-value" value="0" onchange="updateSlider(this, 'sadness-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Joy -->
             <tr>
                 <td>Joy</td>
-                <td><input type="range" min="0" max="100" id="joy-before" value="0"></td>
-                <td><input type="range" min="0" max="100" id="joy-peak" value="0"></td>
-                <td><input type="range" min="0" max="100" id="joy-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="joy-before" value="0" oninput="updateValue(this, 'joy-before-value')">
+                    <input type="number" min="0" max="100" id="joy-before-value" value="0" onchange="updateSlider(this, 'joy-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="joy-peak" value="0" oninput="updateValue(this, 'joy-peak-value')">
+                    <input type="number" min="0" max="100" id="joy-peak-value" value="0" onchange="updateSlider(this, 'joy-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="joy-after" value="0" oninput="updateValue(this, 'joy-after-value')">
+                    <input type="number" min="0" max="100" id="joy-after-value" value="0" onchange="updateSlider(this, 'joy-after')" class="hidden-pdf">
+                </td>
             </tr>
             <!-- Radical Acceptance -->
             <tr>
                 <td>Radical Acceptance</td>
-                <td><input type="range" min="0" max="5" id="acceptance-before" value="0"></td>
-                <td><input type="range" min="0" max="5" id="acceptance-peak" value="0"></td>
-                <td><input type="range" min="0" max="5" id="acceptance-after" value="0"></td>
+                <td>
+                    <input type="range" min="0" max="100" id="acceptance-before" value="0" oninput="updateValue(this, 'acceptance-before-value')">
+                    <input type="number" min="0" max="100" id="acceptance-before-value" value="0" onchange="updateSlider(this, 'acceptance-before')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="acceptance-peak" value="0" oninput="updateValue(this, 'acceptance-peak-value')">
+                    <input type="number" min="0" max="100" id="acceptance-peak-value" value="0" onchange="updateSlider(this, 'acceptance-peak')" class="hidden-pdf">
+                </td>
+                <td>
+                    <input type="range" min="0" max="100" id="acceptance-after" value="0" oninput="updateValue(this, 'acceptance-after-value')">
+                    <input type="number" min="0" max="100" id="acceptance-after-value" value="0" onchange="updateSlider(this, 'acceptance-after')" class="hidden-pdf">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -255,22 +418,42 @@
 
     <script src="scripts.js"></script>
 
+<script>
+        function updateValue(slider, numberInputId) {
+            let numberInput = document.getElementById(numberInputId);
+            numberInput.value = slider.value;
+        }
+
+        function updateSlider(numberInput, sliderId) {
+            let slider = document.getElementById(sliderId);
+            // Validate the number input value
+            if (numberInput.value === "" || numberInput.value < 0 || numberInput.value > 100) {
+                numberInput.value = 0;
+            }
+            slider.value = numberInput.value;
+        }
+    </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
 <script>
-    function generatePDF() {
-        const element = document.getElementById('content'); // Grab the content you want to turn into a PDF
-        
-        const opt = {
-            margin: 10,
-            filename: 'DBT-PE_Exposure_Diary.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-        
-        html2pdf().from(element).set(opt).save();
-    }
+   function generatePDF() {
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+    numberInputs.forEach(input => input.style.display = 'none');
+
+    const element = document.getElementById('content'); 
+    const opt = {
+        margin: 10,
+        filename: 'DBT-PE_Exposure_Diary.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    
+    html2pdf().from(element).set(opt).save().then(() => {
+        numberInputs.forEach(input => input.style.display = 'inline-block');
+    });
+}
 </script>
 
 
