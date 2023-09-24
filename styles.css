@@ -31,10 +31,17 @@ th, td {
 }
 
 @media print {
-    input[type="range"] {
-        display: none;
-    }
+  .slider-value {
+    display: none;
+  }
 }
+
+
+/* Avoid breaking inside tables */
+table {
+    page-break-inside: avoid;
+}
+
 
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
